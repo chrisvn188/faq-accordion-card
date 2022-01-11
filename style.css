@@ -1,4 +1,110 @@
-:root{
+:root {
+  --color-txt-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --color-txt-soft-red: hsl(14, 88%, 65%);
+  --color-txt-very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --color-txt-dark-grayish-blue: hsl(240, 6%, 50%);
+  --color-gradient-soft-violet: hsl(273, 75%, 66%);
+  --color-gradient-soft-blue: hsl(240, 73%, 65%);
+  --color-light-grayish-blue: hsl(240, 5%, 91%);
+  --color-white: hsl(0, 0%, 100%);
+}
+
+/*  basic reset */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  font-size: 1em;
+}
+/*
+  Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-gradient-soft-violet),
+    var(--color-gradient-soft-blue)
+  );
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: 27em;
+  margin: 10em 0;
+  padding: 1.5em;
+  background: var(--color-white) url(images/bg-pattern-mobile.svg) no-repeat;
+  background-position: center top;
+  border-radius: 1.5em;
+  flex: 1;
+}
+
+.card__picture {
+  max-width: 75%;
+  display: block;
+  margin: 0 auto;
+  margin-top: -10em;
+  margin-bottom: 4em;
+}
+
+.card__heading {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.card__list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 2em;
+}
+
+.card__list-item {
+  padding: 1em 0;
+  border-bottom: 1px solid var(--color-light-grayish-blue);
+}
+
+.question {
+  font-size: 0.82rem;
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-txt-very-dark-grayish-blue);
+  cursor: pointer;
+}
+
+.question > span {
+  display: block;
+}
+
+.question:hover {
+  color: var(--color-txt-soft-red);
+}
+
+.question-text.active {
+  font-weight: 700;
+}
+
+.arrow-icon.active {
+  transform: rotate(180deg);
+}
+
+.answer {
+  height: 0;
+  visibility: hidden;
+  color: var(--color-txt-dark-grayish-blue);
+}
+
+.answer.active {
+  height: auto;
+  visibility: visible;
 }

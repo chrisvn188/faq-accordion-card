@@ -1,29 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | FAQ Accordion Card</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
-
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
-
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
-
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
-
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <article class="card">
+      <picture>
+        <source
+          media="(min-width: 1000px)"
+          srcset="./images/illustration-woman-online-desktop.svg"
+        />
+        <img
+          src="./images/illustration-woman-online-mobile.svg"
+          alt="an illustration of a woman using computer"
+          class="card__picture"
+        />
+      </picture>
+      <div class="card__body">
+        <h2 class="card__heading">FAQ</h2>
+        <ul class="card__list">
+          <li class="card__list-item">
+            <div class="question">
+              <span class="question-text"
+                >How many team members can I invite?</span
+              >
+              <span class="arrow-icon"
+                ><img src="images/icon-arrow-down.svg" alt=""
+              /></span>
+            </div>
+            <div class="answer">
+              You can invite up to 2 additional users on the Free plan. There is
+              no limit on team members for the Premium plan.
+            </div>
+          </li>
+          <li class="card__list-item">
+            <div class="question">
+              <span class="question-text"
+                >What is the maximum file upload size?</span
+              >
+              <span class="arrow-icon"
+                ><img src="images/icon-arrow-down.svg" alt=""
+              /></span>
+            </div>
+            <div class="answer">
+              No more than 2GB. All files in your account must fit your allotted
+              storage space.
+            </div>
+          </li>
+          <li class="card__list-item">
+            <div class="question">
+              <span class="question-text">How do I reset my password?</span>
+              <span class="arrow-icon"
+                ><img src="images/icon-arrow-down.svg" alt=""
+              /></span>
+            </div>
+            <div class="answer">
+              Click “Forgot password” from the login page or “Change password”
+              from your profile page. A reset link will be emailed to you.
+            </div>
+          </li>
+          <li class="card__list-item">
+            <div class="question">
+              <span class="question-text">Can I cancel my subscription?</span>
+              <span class="arrow-icon"
+                ><img src="images/icon-arrow-down.svg" alt=""
+              /></span>
+            </div>
+            <div class="answer">
+              Yes! Send us a message and we’ll process your request no questions
+              asked.
+            </div>
+          </li>
+          <li class="card__list-item">
+            <div class="question">
+              <span class="question-text"
+                >Do you provide additional support?</span
+              >
+              <span class="arrow-icon"
+                ><img src="images/icon-arrow-down.svg" alt=""
+              /></span>
+            </div>
+            <div class="answer">
+              Chat and email support is available 24/7. Phone lines are open
+              during normal business hours.
+            </div>
+          </li>
+        </ul>
+      </div>
+    </article>
+  </body>
 </html>
